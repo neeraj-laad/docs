@@ -1,6 +1,6 @@
 ---
 title: "Stacks overview"
-path: /docs/stacks/stack-overview
+path: /docs/stacks/stacks-overview
 section: Appsody stacks
 ---
 # Appsody Stacks

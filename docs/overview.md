@@ -12,34 +12,29 @@ There are 3 key components of Appsody:
 ### Appsody Stacks
 These are configurable technology stacks built with popular runtimes and frameworks, such as Java with Eclipse Microprofile and Node.js with Express, that provide the foundation for building applications which can be deployed and managed effectively in Kubernetes. Stacks allow for rapid development, whilst giving the stack provider the ability to control how the applications are composed, for example which security policies are applied, or which version of a dependency is pulled.
 
-[More info on Appsody Stacks](link)
+[More info on Appsody Stacks](stacks/stacks-overview.md)
 
 ### Appsody Hub
 The central point of control for Appsody Stacks. This is where you can find available stacks, create new stacks or modify existing ones. You can utilize what's in the public repo, and/or clone to provide a private/internal Hub based on your requirements. By making changes to the Stacks in the Hub, you are able to mass-apply updates to applications which have been built on these, simply by restarting the application.
 
-[More info on Appsody Hub](link)
-
 ### Appsody CLI
-No project is complete without a nice new CLI to play with. The Appsody CLI is powerful and intuitive, and allows developers to discover available stacks, bring them into their local development environment, and build/run/test/deploy locally. The Docker container, which is built for your application, can be integrated with Tekton pipelines as described [here](TODO) and deployed to Kubernetes cloud environments.
+No project is complete without a nice new CLI to play with. The Appsody CLI is powerful and intuitive, and allows developers to discover available stacks, bring them into their local development environment, and build/run/test/deploy locally. The Docker container, which is built for your application, can be integrated with Tekton pipelines as described [here](using-appsody/building-and-deploying.md#Deploying-your-app-through-a-Tekton-pipeline) and deployed to Kubernetes cloud environments.
 
-[More info on Appsody CLI](link)
+[More info on Appsody CLI](using-appsody/cli-commands.md)
 
 ## How does it work?
 
-Appsody provides pre-configured application stacks, project templates that build upon stack capabilities, and powerful Appsody CLI that seamlessly brings these pieces together to enables local application development.
+Appsody provides pre-configured application stacks, which use the well-known Dockerfile syntax to specify which language runtimes, frameworks, libraries and tools are included.
 
-Stack providers use well-known Dockerfile syntax to specify which language runtimes, frameworks, libraries and tools get included in the stacks. They also define a set of Appsody environment variables to specify how Appsody handles various application lifecycle events, giving them complete flexibility over the developer experience they want to provide.
+Project templates build upon these stacks, and provide developers with a templatised application to bring into their IDE of choice and begin development.
 
-Application developers are provided with the appropriate project template on their host system when they initialize an Appsody project. When they run, debug or test their application using Appsody CLI, it starts a container with the stack image, makes development workspace available to the running container and starts Appsody controller that uses the Appsody environment variables in the stack and manage the application within the running container.
-
-To understand more about how it works, please review [Appsody architecture](architecture/technical-overview.md)
+When developers run, debug or test their application using the Appsody CLI, it starts a container with the stack image, makes the development workspace available to the running container, and starts the Appsody controller. This is configurable through environment variables in the stack, and manages the application within the running container. For example, the controller can watch for changes in the application `/src` directory, and when these are saved - it will restart the application running in a docker container.
 
 ## Contributing
 
 We welcome all contributions, see [CONTRIBUTING](../CONTRIBUTING) and come chat to us in [Slack](if you'd like to get involved).
 
-Want to see your framework available as an Appsody Stack? See [Link](here) and join the #content-providers channel on the above Slack to introduce yourself!
-
+Want to see your framework available as an Appsody Stack? See [Creating and Modifying Stacks](stacks/create-or-modify.md) and join the `#stack-providers` channel on the above Slack to introduce yourself!
 
 ## Documentation
 
@@ -48,11 +43,9 @@ Follow the links to learn more about Appsody:
 ### Getting Started
 - [Installing Appsody](getting-started/installation.md)
 - [Quick Start](getting-started/quick-start.md)
-### Architecture
-- [Technical Overview](architecture/technical-overview.md)
 ### Stacks
 - [Overview of Stacks](stacks/stacks-overview.md)
-- [Creating Stacks](stacks/creating-stacks.md)
+- [Creating and Modifying Stacks](stacks/create-or-modify.md)
 - [Modifying Stacks](stacks/modifying-stacks.md)
 ### Using Appsody
 - [Local Development](using-appsody/local-development.md)
