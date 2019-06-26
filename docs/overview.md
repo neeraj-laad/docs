@@ -3,7 +3,7 @@ title: "Overview"
 path: /docs/overview
 ---
 # Welcome to Appsody
-Appsody has been designed to help you compose a masterpiece of an application for cloud. 
+Appsody has been designed to help you compose a masterpiece of an application for cloud.
 
 Our aims were to simplify the experience for developers - now asked to have full-stack expertise and responsibilities, and allow them to focus on their application code; and to enable architects to curate an opinionated set of technologies - configurable, reusable and already infused with cloud native capabilities.
 
@@ -25,8 +25,14 @@ No project is complete without a nice new CLI to play with. The Appsody CLI is p
 [More info on Appsody CLI](link)
 
 ## How does it work?
-[TODO CHRIS / Neeraj] Describe common workflow/controller
 
+Appsody provides pre-configured application stacks, project templates that build upon stack capabilities, and powerful Appsody CLI that seamlessly brings these pieces together to enables local application development.
+
+Stack providers use well-known Dockerfile syntax to specify which language runtimes, frameworks, libraries and tools get included in the stacks. They also define a set of Appsody environment variables to specify how Appsody handles various application lifecycle events, giving them complete flexibility over the developer experience they want to provide.
+
+Application developers are provided with the appropriate project template on their host system when they initialize an Appsody project. When they run, debug or test their application using Appsody CLI, it starts a container with the stack image, makes development workspace available to the running container and starts Appsody controller that uses the Appsody environment variables in the stack and manage the application within the running container.
+
+To understand more about how it works, please review [Appsody architecture](architecture/technical-overview.md)
 
 ## Contributing
 
@@ -44,8 +50,6 @@ Follow the links to learn more about Appsody:
 - [Quick Start](getting-started/quick-start.md)
 ### Architecture
 - [Technical Overview](architecture/technical-overview.md)
-- [Controller](architecture/quick-start.md)
-- [Mounts](architecture/mounts.md)
 ### Stacks
 - [Overview of Stacks](stacks/stacks-overview.md)
 - [Creating Stacks](stacks/creating-stacks.md)
