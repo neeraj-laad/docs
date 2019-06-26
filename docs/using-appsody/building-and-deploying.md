@@ -15,7 +15,7 @@ The appsody CLI provides various options to help you with the transition from th
 Next we'll describe in more detail the three paths to deployment. It must be noted that - at this stage - options 2 and 3 are implemented as examples of possible paths to deployment.
 
 ## Building your runtime Docker image with appsody
-When you use the appsody CLI to develop your applications, a "development" Docker image of the target runtime is downloaded and run for you. This image differs slightly from the image that is used at deployment time, in that it configures tools that are only useful during the development phase, as explained in the [architecture documentation](../architecture/).
+When you use the appsody CLI to develop your applications, a "development" Docker image of the target runtime is downloaded and run for you. This image differs slightly from the image that is used at deployment time, in that it configures tools that are only useful during the development phase.
 
 If you want to generate a Docker image that matches what will be deployed on the target runtime platform, you can use the `appsody build` command.
 
