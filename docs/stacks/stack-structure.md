@@ -1,7 +1,7 @@
 ---
 title: "Stack Structure"
 path: /docs/stacks/stack-stucture
-section: Stacks
+section: Appsody Stacks
 ---
 ## Stack structure
 ```bash

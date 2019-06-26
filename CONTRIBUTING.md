@@ -79,7 +79,7 @@ Once the PR has been merged, the release job will automatically run in the CI pr
 
 Whether you are a user or contributor, official support channels include:
 
-- If you have any questions, or need any help, contact us on [Appsody Slack](http://slack.appsody.io/)
+- If you have any questions, or need any help, contact us on [Appsody Slack](https://appsody-slack.eu-gb.mybluemix.net/)
 - You can also comment on existing issues, or raise new ones on [GitHub](https://github.com/appsody/docs/issues)
 
 ## License

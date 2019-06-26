@@ -1,7 +1,7 @@
 ---
 title: "Installation"
 path: /docs/getting-started/installation
-section: Getting started
+section: Getting Started
 ---
 # Installing Appsody
 

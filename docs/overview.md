@@ -32,7 +32,7 @@ When developers run, debug or test their application using the Appsody CLI, it s
 
 ## Contributing
 
-We welcome all contributions, see [CONTRIBUTING](../CONTRIBUTING) and come chat to us in [Slack](if you'd like to get involved).
+We welcome all contributions, see [CONTRIBUTING](../CONTRIBUTING) and come chat to us in [Slack](https://appsody-slack.eu-gb.mybluemix.net/) if you'd like to get involved).
 
 Want to see your framework available as an Appsody Stack? See [Creating and Modifying Stacks](stacks/create-or-modify.md) and join the `#stack-providers` channel on the above Slack to introduce yourself!
 

@@ -1,5 +1,5 @@
 ---
-title: "Building and deploying"
+title: "Building and Deploying"
 section: Using Appsody
 path: /docs/using-appsody/building-and-deploying
 ---
